@@ -1,0 +1,34 @@
+.user-details {
+    padding: 16px 0;
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        figure {
+            margin: 0;
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .repos {
+        .repo {
+            margin-bottom: 15px;
+            padding: 16px;
+            border: 1px solid lightgray;
+            box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+            .name {
+                margin: 0;
+            }
+            .description {
+                margin: 10px 0 8px 0;
+            }
+            .update-time {
+                margin-top: 8px;
+                text-align: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="users-list">
+        <ng-container *ngFor="let user of searchResults?.items">
+            <app-user-card [user]="user"></app-user-card>
+        </ng-container>
+    </div>
+</div>

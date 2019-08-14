@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/fonts/fonts';
+$font-family-roboto-regular: 'roboto-regular';
+$font-family-roboto-bold: 'roboto-bold';
+
+* {
+    box-sizing: border-box;
+    font-family: $font-family-roboto-regular;
+}
+html,body,div,p {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    @media screen and (max-width: 1200px) {
+        padding: 0 15px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0 10px;
+    }
+}
+
+
+.users-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 16px 0;
+    position: relative;
+    z-index: 98;
+    app-user-card {
+        width: 48%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}

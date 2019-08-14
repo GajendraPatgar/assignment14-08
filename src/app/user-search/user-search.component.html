@@ -1,0 +1,9 @@
+<div class="search-users">
+    <div class="container input-container">
+        <form #f="ngForm" (ngSubmit)="searchUser(searchInput.value)">
+            <input type="text" class="search-input" #searchInput>
+            <button class="search-btn" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+<div class="header-padding"></div>
